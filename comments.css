@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: red;
+    color: white;
+}
+
+header {
+    
+    text-align: center;
+    padding: 20px 0;
+    background-color: black;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.comment-section {
+    width: 800px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 300px;
+    margin-bottom: 20px;
+}
+
+.comment-section h2 {
+    margin-top: 0;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+#enviar{
+    width: 20%;
+    margin-left: 300px;
+}
+
+textarea {
+    height: 300px;
+    resize: none;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: red;
+}
+
+.back-button {
+    width: 150px;
+    text-decoration: none;
+    background: white;
+    color:black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    
+}
+
+.back-button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: red;
+        color: white;
+        text-align: center; /* Centralizar o conteúdo verticalmente */
+    }
+    
+    header {
+        padding: 20px 0;
+        background-color: black;
+    }
+    
+    h1 {
+        font-size: 30px; /* Reduzir o tamanho da fonte para melhor ajuste em telas menores */
+    }
+    
+    main {
+        padding: 20px;
+        margin-left: -5px;
+    }
+    
+    .comment-section {
+        width: 90%; /* Ajustar a largura para ocupar quase toda a largura da tela */
+        height: auto; /* Permitir que a altura se ajuste automaticamente ao conteúdo */
+        margin: 0 auto 20px; /* Centralizar horizontalmente e adicionar espaço inferior */
+       
+    }
+    
+    .comment-section h2 {
+        margin-top: 0;
+    }
+    
+    form {
+        width: 90%; /* Ajustar a largura para ocupar quase toda a largura da tela */
+        margin: 0 auto; /* Centralizar horizontalmente */
+        margin-right:26px
+    }
+    
+    #enviar {
+        width: 106%; /* Ajustar a largura para ocupar a largura total disponível */
+        margin: 10px auto; /* Centralizar horizontalmente e adicionar margem superior */
+    }
+    
+    textarea {
+        width: 100%; /* Ajustar a largura para ocupar a largura total disponível */
+    }
+    
+    button {
+        width: 100%; /* Ajustar a largura para ocupar a largura total disponível */
+    }
+    
+    footer {
+        padding: 20px 0;
+        background-color: red;
+    }
+    
+    .back-button {
+        width: 150px;
+        text-decoration: none;
+        background: white;
+        color: black;
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin: 20px auto; /* Centralizar horizontalmente e adicionar margem superior */
+    }
+    
+    .back-button:hover {
+        background-color: black;
+        color: white;
+    }
+}

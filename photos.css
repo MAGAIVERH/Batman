@@ -1,0 +1,126 @@
+/* Reset de margin e padding para o body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/* Estilo para o h1 */
+h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 100px;
+    font-size: 50px;
+}
+
+/* Container das fotos */
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Estilo para cada foto */
+.photo {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+/* Estilo para o botão */
+.button5 {
+    background:white;
+    color: black;
+    width: 15%;
+    text-align: center;  
+    text-decoration: none;
+    margin-top: 50px;
+    margin-left: 430px;
+    margin-bottom: 50px;
+    border: none;
+    border-radius: 20px;  
+}
+
+.button5 a {
+    width: 80%;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+    
+}
+
+.button5 a:hover {
+    background-color:red;
+    color: black;
+}
+
+
+
+
+@media (max-width: 768px){
+
+h1{
+    margin-bottom: 20px;
+}
+
+
+.photo {
+        width: calc(50% - 20px);
+        margin: 10px;
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+       
+}
+
+
+.button5 {
+    width: 45%;
+    margin: 50px auto; /* Centralizar verticalmente e horizontalmente */
+    border: none;
+
+}
+
+
+.button5 a {
+    width: 80%;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center; /* Centralizar o texto horizontalmente */
+    transition: background-color 0.3s, color 0.3s; /* Adicionar transição suave */
+}
+
+.button5 a:hover {
+    background-color: red;
+    color: black;
+}
+
+
+}
